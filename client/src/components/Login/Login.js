@@ -98,7 +98,7 @@ const Login = () => {
         const result = await response.json()
 
         if (result.success) {
-            const response1 = await fetch(`http://localhost:8000/api/v1/getdet/${result.token}` , {
+            const response1 = await fetch(`https://project5-intern.herokuapp.com/api/v1/getdet/${result.token}` , {
                 method : "POST",
                 headers : { 
                     "Content-Type": "application/json",
