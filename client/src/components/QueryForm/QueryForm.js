@@ -15,7 +15,7 @@ const QueryForm = (props) => {
     useEffect(async () => {
         
         if (props.token !== null) {
-            const response = await fetch(`http://localhost:8000/api/v1/getdet/${props.token}` , {
+            const response = await fetch(`https://project5-intern.herokuapp.com/api/v1/getdet/${props.token}` , {
                 method : "POST" ,
                 header : { 'Content-Type': 'application/json'} 
             })
@@ -54,7 +54,7 @@ const QueryForm = (props) => {
 
         if (props.token === null) {
 
-            const response = await fetch('http://localhost:8000/api/v2/post/undefined' , {
+            const response = await fetch('https://project5-intern.herokuapp.com/api/v2/post/undefined' , {
                 method : "POST" , 
                 headers : {"Content-Type" : "application/json"} ,
                 body : JSON.stringify({ 
@@ -72,7 +72,7 @@ const QueryForm = (props) => {
         }
         else {
 
-            const response = await fetch(`http://localhost:8000/api/v2/post/${props.token}` ,{
+            const response = await fetch(`https://project5-intern.herokuapp.com/api/v2/post/${props.token}` ,{
                 method : "POST" ,
                 headers : {"Content-Type" : "application/json"} ,
                 body : JSON.stringify({
