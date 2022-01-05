@@ -86,6 +86,11 @@ const QueryForm = (props) => {
             if (result.success) {
                 Navigate('/')
             }
+            else {
+                document.getElementById('problem3').style.color = "red"
+                document.getElementById('problem3').style.visibility = "visible"
+                document.getElementById('problem3').innerHTML = "user with same email already exists kindly try with other email"
+            }
         }
 
     }
