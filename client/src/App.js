@@ -46,6 +46,7 @@ function App() {
           <Route path = '/login' element = {<><Login/></>} />
           {/* <Route path = '/QueryForm' element = {token1 === undefined?<QueryForm token = {null}/>:<><Navbar /><QueryForm token = {token?token:null}/></>} /> */}
           {token && <Route path = "/QueryForm" element = {<><Navbar /><QueryForm token = {token} /></>} />}
+          {!token1 && <Route path = "/QueryForm" element = {<QueryForm token = {null}/>} />}
         </Routes>
       
       </div>
