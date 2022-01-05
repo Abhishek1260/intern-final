@@ -8,7 +8,7 @@ const Query = () => {
 
     useEffect(async () => {
         
-        const response = await fetch('http://localhost:8000/api/v2/getall' , {
+        const response = await fetch('https://project5-intern.herokuapp.com/api/v2/getall' , {
             method : "GET" ,
             headers : {"contentType" : "application/json"} ,
         })
