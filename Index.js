@@ -7,7 +7,7 @@ const path = require('path')
 
 const app = express()
 var corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://project5-intern.herokuapp.com/',
     credentials:  true
 }
 app.use(cors(corsOptions))
