@@ -8,7 +8,7 @@ const Query = (props) => {
 
     useEffect(async () => {
         
-        const response = await fetch(`https://project5-intern.herokuapp.com/api/v2/getall/${props.token}` , {
+        const response = await fetch(`https://project5-intern.herokuapp.com/api/v2/getall/${localStorage.getItem('token')}`, {
             method : "GET" ,
             headers : {"contentType" : "application/json"} ,
         })
