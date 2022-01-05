@@ -149,7 +149,7 @@ const Login = () => {
         }
         
         
-        const response = await fetch('http://localhost:8000/api/v1/signup' , {
+        const response = await fetch('https://project5-intern.herokuapp.com/api/v1/signup' , {
             method : "POST" ,
             headers : { "Content-Type": "application/json"} ,
             body : JSON.stringify({
