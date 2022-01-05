@@ -1,0 +1,48 @@
+.App {
+  width : 60%;
+  height : 80vh;
+  background-image: linear-gradient(to right top , rgba(255 , 255 , 255 , 0.7) , rgba(255 , 255 , 255 , 0.3));
+  border-radius : 2rem;
+  backdrop-filter: blur(1.5rem);
+  display : flex;
+  overflow-y: auto;
+}
+
+body {
+  width : 100%;
+  height : 100vh;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#root {
+  height : 100vh;
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  align-items : center;
+  width : 100%; 
+  background-image : linear-gradient(to right top , #65dfc9 , #6cdbeb)
+}
+
+.circle1 , .circle2 {
+  position : absolute;
+  height : 10rem;
+  width : 10rem;
+  border-radius: 100%;
+  background-color: royalblue;
+  background-image: linear-gradient(to right top , rgba(255, 255, 255, 0.9) , rgba(255 , 255 , 255 , 0.3));
+}
+
+.circle1 {
+  top : 5%;
+  left : 15%;
+}
+
+.circle2 {
+  top : 68%;
+  left : 73%;
+}

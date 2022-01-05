@@ -1,0 +1,126 @@
+.Login {
+    height : 100%;
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.form1 {
+    display : flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width :100%;
+    margin : auto;
+}
+
+.form2 {
+    display : flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width :100%;
+    margin : auto;
+}
+
+input {
+    margin : 10px 0px;
+}
+
+input[type = "text"] , input[type = "password"]{
+    outline : none;
+    border : none;
+    padding-left : 10px;
+    border-radius: 20px;
+    padding-right : 10px;
+    height : 40px;
+    width : 150%;
+    caret-color: #004d7a65;
+    color : rgba(0, 0, 0, 0.74);
+    letter-spacing: 0.5px
+}
+
+#submit1 {
+    display : none;
+}
+
+.bttnLogin1 {
+    width : 40px;
+    height : 40px;
+    background-color : rgba(0, 0, 0, 0.68);
+    border-radius : 100%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor : pointer;
+}
+
+.fa-arrow-right {
+    color : white;
+}
+
+.changebuttons {
+    display : flex;
+    justify-content: center;
+    align-items: space-around;
+    margin : 20px;
+}
+
+button {
+    height : 40px;
+    width : 200px;
+    background-color : rgba(134, 76, 76, 0);
+    border : 1px solid rgba(255, 255, 255, 0);
+    border-bottom : 1px solid white;
+    font-size : 20px;
+    font-weight: 600;
+    transition : all 0.5s ease-in-out;
+    border-radius: 4px;
+    cursor : pointer;
+}
+
+.complogo {
+    color : white;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size : 50px;
+}
+
+button:hover {
+    background-color : white;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+#submit2 {
+    display : none;
+}
+
+#login , #signup {
+    border-radius : 4px;
+}
+
+.submitQuery {
+    margin-top : 40px;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 20px;
+    padding : 10px 40px;
+    cursor : pointer;
+    border : 1px solid white;
+    color : rgba(0 , 0 , 0 , 0.7);
+    transition : all 0.5s ease-in-out;
+}
+
+.btn:hover { 
+    background-color : white;
+    color : rgba(0 , 0 , 0 , 1)
+}
