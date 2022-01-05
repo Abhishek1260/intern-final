@@ -117,7 +117,13 @@ const Login = () => {
                 return;
 
             }
+      
             
+        }
+        else {
+            document.getElementById('problem6').style.color = "red"
+            document.getElementById('problem6').style.visibility = "visible"
+            document.getElementById('problem6').innerHTML = "credentials mistmatch"
         }
 
     }
@@ -167,6 +173,11 @@ const Login = () => {
             cookies.set('token' , result.token)
             cookies.set('name' , register.name)
             navigate('/')
+        }
+        else {
+            document.getElementById('problem9').style.color = "red"
+            document.getElementById('problem9').style.visibility = "visible"
+            document.getElementById('problem9').innerHTML = "user with the same email already exists"
         }
 
     }
